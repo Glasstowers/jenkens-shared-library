@@ -2,7 +2,7 @@ def call(String stageName){
   
   if ("${stageName}" == "Build")
      {
-       bat "mvn clean package"
+       bat "mvn install"
      }
   else if ("${stageName}" == "SonarQube Report")
      {
