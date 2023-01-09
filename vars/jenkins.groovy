@@ -8,8 +8,8 @@ def call(String stageName){
      {
        bat "mvn clean sonar:sonar"
      }
-  else if ("${stageName}" == "Upload Into Nexus")
+  /*else if ("${stageName}" == "Upload Into Nexus")
      {
        bat "mvn clean deploy"
-     }
+     }*/
 }
