@@ -12,4 +12,9 @@ def call(String stageName){
      {
        bat "mvn clean deploy"
      }*/
+  else if ("${stageName}" == "deploy")
+    {
+       deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://127.0.0.1:8085/')], contextPath: null, war: 'target/*war'
+     }
 }
+
