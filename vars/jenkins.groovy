@@ -6,7 +6,7 @@ def call(String stageName){
      }
   else if ("${stageName}" == "SonarQube Report")
      {
-       bat "mvn clean sonar:sonar"
+       bat "mvn sonar:sonar"
      }
   /*else if ("${stageName}" == "Upload Into Nexus")
      {
